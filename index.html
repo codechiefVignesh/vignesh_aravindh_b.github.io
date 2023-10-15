@@ -107,7 +107,46 @@
         {
             word-break: break-word;
         } */
+        /* Add this CSS at the end of your existing styles */
+        @media screen and (max-width: 768px) {
+            .container-box 
+            {
+                padding: 25px;
+            }
 
+            .header 
+            {
+                height: auto;
+                text-align: center;
+            }
+
+            .contact, .institute_address, .linkin, .git 
+            {
+                position: static;
+                text-align: center;
+                font-size: smaller;
+            }
+
+            #box1 
+            {
+                position: static;
+                text-align: center;
+                font-size: 20px;
+                
+            }
+
+            .image 
+            {
+                margin: 20px auto;
+                display: block;
+                display: none;
+            }
+            .footer
+            {
+                position:static;
+                font-size: small;
+            }
+        }
     </style>
 </head>
 <body>
