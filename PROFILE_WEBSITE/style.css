@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.content-container {
+    text-align: center;
+}
+
+.portfolio-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: #FF007F;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 26px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+/* ... (rest of your CSS) */
+
+
+.portfolio-button:hover {
+    background-color: black;
+    opacity: 0.65;
+    color: wheat;
+    transition: background-color 0.5s ease, opacity 0.5s ease, color 0.5s ease;
+}
+
+.background .html4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('html4_img.jpg');
+    background-size: cover;
+    width: calc(50% - 1px);
+    height: calc(50% - 1px);
+    border-radius: 50px; 
+    /* background-color: rgba(255, 0, 0, 0);  */
+    opacity: 0.8;
+}
+
+
+
+.background .html2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('html2_img.jpg');
+    background-size: cover;
+    width: calc(50% - 1px);
+    height: calc(50% - 1px);
+    filter: brightness(50%);
+    border-radius: 10px; 
+}
+
+
+.background .html1 {
+    position: absolute;
+    bottom: 100;
+    left: 75%;
+    transform: translateX(-50%);
+    background-image: url('html1_img.jpg');
+    background-size: cover;
+    width: calc(50% - 1px);
+    height: calc(50% - 1px);
+    border-radius: 10px; 
+}
+
+
+.background .html3 {
+    position: absolute;
+    top: 75%;
+    right: 50%;
+    transform: translateY(-50%);
+    background-image: url('html3_img.jpg');
+    background-size: cover;
+    width: calc(50% - 1px);
+    height: calc(50% - 1px);
+    border-radius: 10px; 
+}
+.background .html6 {
+    position: absolute;
+    top: 75%;
+    right: 0%;
+    transform: translateY(-50%);
+    background-image: url('html6_img.jpg');
+    background-size: cover;
+    width: calc(50% - 1px);
+    height: calc(50% - 1px);
+    border-radius: 10px; 
+}
+
+
+.header {
+    font-weight: bolder;
+    font-size: 80px;
+    text-align: center;
+    color: #8a2121;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1; 
+    animation: typing 6s steps(100, end) infinite;
+}
+
+.underscore {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    animation: blink 1s infinite;
+}
+
+@keyframes typing {
+    from, to {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
