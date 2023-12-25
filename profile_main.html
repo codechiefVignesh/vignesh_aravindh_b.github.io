@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website_main</title>
+    <style>
+        .container-box 
+        {
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        .header
+        {
+            border-radius: 10px;
+            background-color:lightskyblue;
+            height: 250px;
+            position: relative;
+            font-weight: bold;
+        }
+        .contact
+        {
+            font-weight: lighter;
+            font-size: 20px;
+            position: absolute;
+            left: 5.5%;
+            top:41%;
+        }
+        .institute_address
+        {
+            font-weight: lighter;
+            font-size: 17px;
+            position: absolute;
+            left: 5.5%;
+            top:53%;
+        }
+        /* .stud
+        {
+            font-weight: lighter;
+            font-size: 20px;
+            position: absolute;
+            left: 5.5%;
+            top:49%;
+        } */
+        #box1
+        {
+            position: absolute;
+            top: 7%;
+            left: 5%;
+            /* transform: translate(0,0%); */
+            font-size: 70px;
+            font-weight: bolder;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+        .linkin
+        {
+            position: absolute;
+            top:73%;
+            left:5.5%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .git
+        {
+            position: absolute;
+            top:85%;
+            left:5.5%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .image
+        {
+            position: relative ;
+            top: 20px;
+            left: 82%;
+            height: 199px;
+            width: 199px;
+            border-radius: 100px;
+            border-style: double;
+        }
+        body
+        {
+            
+            text-size-adjust: auto;
+            background-color: aliceblue;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        .footer
+        {
+            position: absolute;
+            left: 75%;
+        }
+        .summary,.experience,.education,.languages,.skills,.hobbies
+        {
+            position:static;
+            left: 7%;
+            margin: 20px;
+            
+        }
+        /* .container p 
+        {
+            word-break: break-word;
+        } */
+        /* Add this CSS at the end of your existing styles */
+        @media screen and (max-width: 1114px) {
+            .container-box 
+            {
+                padding: 25px;
+            }
+
+            .header 
+            {
+                height: auto;
+                text-align: center;
+            }
+
+            .contact, .institute_address, .linkin, .git 
+            {
+                position: static;
+                text-align: center;
+                font-size: smaller;
+            }
+
+            #box1 
+            {
+                position: static;
+                text-align: center;
+                font-size: 20px;
+                
+            }
+
+            .image 
+            {
+                margin: 20px auto;
+                display: block;
+                display: none;
+            }
+            .footer
+            {
+                position:static;
+                font-size: small;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="box" id="box1">VIGNESH ARAVINDH B</div>
+        <!-- <h1 class="stud">UNDERGRADUATE STUDENT</h1> -->
+        <div class = "contact">Email : vignesharavindh72@gmail.com | Phone: +91-7200192134 </div>
+        <div class = "institute_address">IIITDM Kancheepuram, Chennai - 600 127</div>
+        <a href="https://www.linkedin.com/in/vignesh-aravindh-b-24bb63252/" target="_blank"><div class="linkin" id = "linkin" >Linked_IN Portfolio</div></a>
+        <a href="https://github.com/codechiefVignesh" target="_blank"><div class="git" id = "git" >GitHub Profile</div></a>
+        <img src="https://drive.google.com/uc?export=view&id=1Qk-ovK_JHfQkuce48vjtuH1wHRcccwiv" alt="Your Image" class="image">
+    </div>
+    <section class="summary container-box">
+        <div class="container">
+            <h2>Motivation</h2>
+            <p>As a newcomer to the field, I'm eager to embark on my first internship and learn from experienced professionals at IBM Research India. Proficient in C++ and Python, and with a solid foundation in Data Structures and Algorithms,
+                I'm excited to apply these skills to real-world projects. While I'm still building my knowledge in AI/ML, I'm enthusiastic about contributing to innovative research and gaining valuable industry experience through collaboration.</p>
+        </div>
+    </section>
+    <section class="experience container-box">
+        <div class="container">
+            <h2>Activities</h2>
+            <div class="job">
+                <h3>NASA SPACE SETTLEMENT CONTEST</h3>
+                <p>- Team Member</p>
+                <ul>
+                <p><li>Been a part of 8-member team and worked on building a documentation of an artificial planet.</li>
+                    <li>Secured Rank 3 in the international stage under Group 9.</li></p>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Smart India Hackathon Project - India</h3>
+                <p>- Team Member</p>
+                <ul>
+                <p><li>Been a part of a team and worked on building a AI - Assisted Telemedicine KIOSK for Rural India.</li>
+                    <li>Actively contributed to the team by sharing insights, coordinating and communicating effectively.</li>
+                    <li>Fostered a positive and collaborative team environment.</li></p>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="education container-box">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="school">
+                <h3>IIITDM Kancheepuram  - 2022:2026</h3>
+                <p style="font-weight: 600;">B.Tech. Computer Science and Engineering, Artificial Intelligence</p>
+                <p>GPA: 9.08</p>
+            </div>
+            <div class="school">
+                <h3>Sethu Bhaskara Matriculation Higher Secondary School  - 2020:2022</h3>
+                <p>12th std - MPC+CS</p>
+            </div>
+        </div>
+    </section>
+    <section class="languages container-box">
+        <div class="container">
+            <h2>Languages</h2>
+            <ul>
+                <li>TAMIL - Bilingual</li>
+                <li>HINDI - Bilingual</li>
+                <li>ENGLISH - Full Professional Proficiency</li>
+            </ul>
+        </div>
+    </section>
+    <section class="skills container-box">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li><p>Currently pursuing a course on Data Science from Udemy</p></li>
+                <li><p>HTML, CSS, JavaScript</p></li>
+                <li><p>GIT</p></li>
+                <li><p>C, C++, PYTHON, SQL, MySql, CSV, Linux, MS Office</p></li>
+            </ul>
+        </div>
+    </section>
+    <section class="hobbies container-box">
+        <div class="container">
+            <h2>Sports and Hobbies</h2>
+            <ul>
+                <li><p>Good in playing Badminton and creating drawings.</p></li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Vignesh Aravindh. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
