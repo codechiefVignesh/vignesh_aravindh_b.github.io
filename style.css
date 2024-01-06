@@ -17,7 +17,16 @@
     position: relative;
     cursor: pointer;
   }
-  
+  /* .skills
+  {
+    font-size: 200px;
+    position: relative;
+    justify-content: right;
+    top: 100px;
+    right: 0;
+    width: 1200px;
+
+  } */
   .circle {
     position: absolute;
     border: 2px solid #db3434; 
@@ -84,7 +93,7 @@
     border-radius: 2rem;
     margin: 0 10px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
   }
@@ -99,24 +108,26 @@
     background: #223;
     color: white;
     border-radius: 50%;
-    width: 50px;
+    /* width: 50px; */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin:10px;
+    /* margin-bottom: 100px; */
   }
 
   .card > .row > .description {
     display: flex;
-    justify-content: center;
+    justify-content: top;
     flex-direction: column;
     overflow: hidden;
-    height: 80px;
+    height: 160px;
     width: 520px;
     opacity: 0;
     transform: translateY(30px);
     transition-delay: .3s;
     transition: all .3s ease;
+    /* font-size: larger; */
   }
   
 
@@ -149,13 +160,13 @@
       height: 60vh;
     }
     25% {
-      height: 80vh; 
+      height: 70vh; 
     }
     50% {
-      height: 81vh; 
+      height: 71vh; 
     }
     75% {
-      height: 80vh; 
+      height: 60vh; 
     }
   }
 
@@ -429,3 +440,53 @@
 .wrapper1:hover ~ .cursor2{
   opacity: 0;
 }
+.navigation:hover ~ .cursor{
+  transform: translate(0%, 0%) scale(1.5);
+  background-color:gray;
+  opacity: 0;
+}
+
+.navigation:hover ~ .cursor2{
+  opacity: 1;
+}
+.wrapper .right-text-container {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  height: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: right;
+  overflow: hidden;
+}
+
+.right-text {
+  font-size: 6.5em;
+  color: #333; /* Adjust the color as needed */
+  font-family:'Times New Roman', Times, serif;
+  white-space: pre;
+  overflow: hidden;
+  animation: revealText 3s forwards; /* You can adjust the duration as needed */
+  position: relative;
+}
+
+@keyframes revealText {
+  0% {
+    width: 0;
+    color: #333;
+  }
+  25% {
+    width: 25%;
+    color: red;
+  }
+  50%{
+    width:50%;
+    color: aqua;
+  }
+  100% {
+    width: 100%;
+    color: cadetblue;
+  }
+}
+
+
