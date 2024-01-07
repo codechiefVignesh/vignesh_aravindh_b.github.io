@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Contact</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <img src="logo.png" class="logo">
+      <ul>
+        <li><a href="/index.html">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="MY_RESUME_FINAL-1.pdf">Resume</a></li>
+      </ul>
+    </nav>
+    <div class="text-box">
+      <h1 class="h1">DEVELOPER</h1>
+      <h2 class="h12">OUTSIDE</h2>
+      <h1 class="h2">ARTIST</h1>
+      <h2 class="h22">INSIDE</h2>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/vignesh-aravindh-b-24bb63252/"><img src="in.png" alt=""></a>
+      <a href="https://github.com/codechiefVignesh"><img src="git.png" alt=""></a>
+      <a href="mailto: vignesharavindh72@gmail.com"><img src="gmail.png" alt=""></a>
+    </div>
+  </div>
+  <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <script>
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+        document.addEventListener("mousemove",function(e){
+          cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+        });
+      </script>
+</body>
+</html>
